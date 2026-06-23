@@ -1,46 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
+    <title>Stopwatch</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="logo">SkillCraft</div>
+<div class="container">
+    <h1>Stopwatch</h1>
 
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <div id="display">00:00:00</div>
 
-    <section class="hero">
-        <h1>Welcome to My Landing Page</h1>
-        <p>Responsive Navigation Menu using HTML, CSS & JavaScript</p>
-    </section>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+    <button onclick="recordLap()">Lap</button>
 
-    <section class="content">
-        <h2>About Us</h2>
-        <p>Scroll down to see the navbar color change.</p>
-    </section>
+    <ul id="laps"></ul>
+</div>
 
-    <section class="content">
-        <h2>Services</h2>
-        <p>Responsive design for all devices.</p>
-    </section>
-
-    <section class="content">
-        <h2>Contact</h2>
-        <p>Frontend Development Internship Task 01.</p>
-    </section>
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
